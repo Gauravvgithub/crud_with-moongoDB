@@ -1,21 +1,41 @@
 <div class="container">
   <form action="/emp/save-emp" method="post">
     <div>
-      <label>Enter Your name</label>
-      <input type="text" />
+      <label class="col-form-label mt-4">Enter Your name</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Your Name"
+        name="name"
+      />
     </div>
     <div>
-      <label>Enter Your email</label>
-      <input type="text" />
+      <label class="col-form-label mt-4">Enter Your email</label>
+      <input
+        class="form-control"
+        type="email"
+        placeholder="Enter Your Email"
+        name="email"
+      />
     </div>
     <div>
-      <label>Enter Your Phone</label>
-      <input type="text" />
+      <label class="col-form-label mt-4">Enter Your Phone</label>
+      <input
+        class="form-control"
+        type="number"
+        placeholder="Enter Your Phone"
+        name="mobile"
+      />
     </div>
     <div>
-      <label>Enter Your City</label>
-      <input type="text" />
+      <label class="col-form-label mt-4">Enter Your City</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Your City"
+        name="city"
+      />
     </div>
-    <button class="btn btn-primary">Submit</button>
+    <button class="btn btn-primary mt-5" type="submit">Submit</button>
   </form>
 </div>

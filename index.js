@@ -18,8 +18,7 @@ app.set("views", "./views");
 app.get("/", (req, res) => {
   res.render("home");
 });
-// app.use("/emp", require("./controllers/routes"));
-app.use('/emp', userRouter);
+app.use("/emp", require("./controllers/routes"));
 
 app.listen(PORT, () => {
   console.log(`server is running on http://localhost:${PORT}/`);

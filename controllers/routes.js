@@ -33,4 +33,27 @@ router.get("/show-all-emp", async (req,res)=>{
     }
 })
 
+// delete employee
+
+router.get("/delete-emp", async (req, res)=>{
+    try {
+        const result = await Employee.find()
+        // console.log(result)
+        res.render("deleteEmp", {list : result})
+    } catch (error) {
+        console.log(error)
+    }
+})
+
+router.get("/final-delete/:uid", async (req, res)=>{
+    try {
+        const result = await Employee.findByIdAndDelete(req.params.uid)
+        console.log(result)
+        res.redirect("/emp/delete-emp")
+
+    } catch (error) {
+        console.log(error)
+    }
+})
+
 module.exports = router;

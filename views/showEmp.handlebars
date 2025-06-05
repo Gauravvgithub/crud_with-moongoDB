@@ -1,23 +1,24 @@
 <div class="d-flex justify-content-center m-2">All Employees Data</div>
 <div>
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">Phone</th>
-      <th scope="col">City</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each list}}
-    <tr class="table-active">
-      <td aria-required="true">{{this.fullname}}</td>
-      <td>{{this.email}}</td>
-      <td>{{this.phone}}</td>
-      <td>{{this.city}}</td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">City</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each list}}
+        <tr class="table-active">
+          <td aria-required="true">{{this.fullname}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.phone}}</td>
+          <td>{{this.city}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <a href="/"><button class="btn btn-success">Back to home</button></a>
 </div>

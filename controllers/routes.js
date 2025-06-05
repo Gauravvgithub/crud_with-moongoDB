@@ -21,4 +21,16 @@ router.post("/save-emp", async (request, response) => {
   }
 });
 
+//show all employees
+
+router.get("/show-all-emp", async (req,res)=>{
+    try {
+        const result = await Employee.find()
+        // console.log(result)
+        res.render("showEmp", {list : result})
+    } catch (error) {
+        console.log(error)
+    }
+})
+
 module.exports = router;

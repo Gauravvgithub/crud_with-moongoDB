@@ -15,6 +15,7 @@
     "nodemon": "^3.1.10"
   },
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3",
     "mongodb": "^6.16.0",

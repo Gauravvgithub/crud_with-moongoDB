@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config()
 const connectDB = require("./models/DB");
 const app = express();
 const engine = require("express-handlebars").engine;
@@ -9,7 +10,7 @@ const {
 
 connectDB();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

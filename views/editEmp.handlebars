@@ -1,0 +1,50 @@
+<div class="container">
+  <form action="/emp/updatedEmp/{{result._id}}" method="post">
+    <div>
+      <label class="col-form-label mt-4">Enter Your name</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Your Name"
+        name="fullname"
+        value="{{result.fullname}}"
+        required
+      />
+    </div>
+    <div>
+      <label class="col-form-label mt-4">Enter Your email</label>
+      <input
+        class="form-control"
+        type="email"
+        placeholder="Enter Your Email"
+        name="email"
+        value="{{result.email}}"
+        required
+      />
+    </div>
+    <div>
+      <label class="col-form-label mt-4">Enter Your Phone</label>
+      <input
+        class="form-control"
+        type="number"
+        placeholder="Enter Your Phone"
+        name="phone"
+        value="{{result.phone}}"
+        required
+      />
+    </div>
+    <div>
+      <label class="col-form-label mt-4">Enter Your City</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter Your City"
+        name="city"
+        value="{{result.city}}"
+        required
+      />
+    </div>
+    <button class="btn btn-primary mt-5" type="submit">Submit</button>
+  </form>
+    <a href="/"><button class="btn btn-success">Back to home</button></a>
+</div>

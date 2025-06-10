@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center m-2">All Employees Data</div>
+<div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">City</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each list}}
+        <tr class="table-active">
+          <td scope="row">{{this.fullname}}</td>
+          <td scope="row">{{this.email}}</td>
+          <td scope="row">{{this.phone}}</td>
+          <td scope="row">{{this.city}}</td>
+          <td scope="row">
+            <a href="/emp/editEmp/{{this._id}}"><button class="btn btn-info">Edit</button></a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <a href="/"><button class="btn btn-success">Back to home</button></a>
+</div>

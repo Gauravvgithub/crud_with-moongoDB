@@ -1,4 +1,10 @@
+{{#if message}}
+  <script>
+    alert("{{message}}");
+  </script>
+{{/if}}
 <div class="container">
+  <h1 class="mt-4">Add Employee</h1>
   <form action="/emp/save-emp" method="post">
     <div>
       <label class="col-form-label mt-4">Enter Your name</label>

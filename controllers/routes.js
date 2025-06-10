@@ -17,7 +17,12 @@ router.post("/save-emp", async (request, response) => {
     await Emp.save();
     response.redirect("/");
   } catch (error) {
-    console.log(error);
+    // console.log(error);
+    if (error.code === 11000) {
+    response.render("addEmp", { message: "Email already exists!", type: "error" });
+  } else {
+    response.render("addEmp", { message: "Something went wrong", type: "error" });
+  }
   }
 });
 

@@ -48,7 +48,7 @@ router.get("/delete-emp", async (req, res)=>{
 router.get("/final-delete/:uid", async (req, res)=>{
     try {
         const result = await Employee.findByIdAndDelete(req.params.uid)
-        console.log(result)
+        // console.log(result)
         res.redirect("/emp/delete-emp")
 
     } catch (error) {
@@ -56,4 +56,33 @@ router.get("/final-delete/:uid", async (req, res)=>{
     }
 })
 
+// Update employee
+
+router.get("/updateEmp", async (req, res)=>{
+  try {
+    let result = await Employee.find()
+    res.render("updateEmp", {list:result})
+  } catch (error) {
+    console.log(error)
+  }
+})
+
+router.get("/editEmp/:id", async (req, res)=>{
+  try {
+    let result = await Employee.findById(req.params.id);
+    console.log(result)
+    res.render("editEmp", {result})
+  } catch (error) {
+    console.log(error)
+  }
+})
+
+router.post("/updatedEmp/:id", async (req, res)=>{
+  try {
+    await Employee.findByIdAndUpdate(req.params.id, req.body);
+    res.redirect("/emp/updateEmp");
+  } catch (error) {
+    console.log(error)
+  }
+})
 module.exports = router;

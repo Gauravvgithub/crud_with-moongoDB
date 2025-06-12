@@ -1,24 +1,76 @@
 <div class="container d-flex justify-content-center flex-column">
   <h1 class="text-center text-dark">Employee Management System</h1>
   <div class="d-inline-flex justify-content-center align-items-center flex-column text-center">
-    <a
-      href="/emp/add-emp"
-      class="btn btn-primary mt-2"
-      style="width: 18rem;"
-    >Add Employee</a>
-    <a
-      href="/emp/show-all-emp"
-      class="btn btn-warning mt-2"
-      style="width: 18rem;"
-    >Show Employees</a>
-    <a
-      href="/emp/delete-emp"
-      class="btn btn-danger mt-2"
-      style="width: 18rem;"
-    >Delete Employee</a>
-  <a
-      href="/emp/updateEmp"
-      class="btn btn-info mt-2"
-      style="width: 18rem;"
-    >Update Employee</a>
-</div>
+    <a href="/emp/add-emp" class="btn btn-primary mt-4" style="width: 18rem;">Add Employee</a>
+    <a href="/emp/show-all-emp" class="btn btn-warning mt-4" style="width: 18rem;">Show Employees</a>
+    <a href="/emp/delete-emp" class="btn btn-danger mt-4" style="width: 18rem;">Delete Employee</a>
+    <a href="/emp/updateEmp" class="btn btn-info mt-4" style="width: 18rem;">Update Employee</a>
+    <button class="btn btn-success mt-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample">
+      About Me
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Weclome, Hey i am Gaurav</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <section class="container">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <h2 class="mb-4 text-center">About This Project</h2>
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <h4 class="card-title mb-3">Employee Management System (CRUD App)</h4>
+                    <p class="card-text">
+                      Thrilled to share my latest backend project — a fully functional Employee Management System, built
+                      with modern web technologies and now deployed live! 🚀
+                    </p>
+
+                    <h5 class="mt-4">🔧 Tech Stack and Core Features:</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">💻 <strong>Node.js + Express.js</strong> for backend logic and routing
+                      </li>
+                      <li class="list-group-item">📦 <strong>MongoDB Atlas</strong> for secure, scalable cloud database
+                      </li>
+                      <li class="list-group-item">⚙️ <strong>RESTful API</strong> supporting full CRUD operations</li>
+                      <li class="list-group-item">🧩 <strong>Handlebars (HBS)</strong> for dynamic server-side rendering
+                      </li>
+                      <li class="list-group-item">🌐 <strong>Deployed on Render</strong> (Free Tier)</li>
+                      <li class="list-group-item">🔄 <strong>UptimeRobot</strong> for 24/7 uptime monitoring</li>
+                    </ul>
+
+                    <h5 class="mt-4">📌 Learnings and Key Concepts:</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">✔️ REST API design principles</li>
+                      <li class="list-group-item">✔️ Server-side routing and backend logic</li>
+                      <li class="list-group-item">✔️ MVC structure with templating</li>
+                      <li class="list-group-item">✔️ Cloud deployment and uptime monitoring</li>
+                    </ul>
+
+                    <h5 class="mt-4">🔗 Project Links:</h5>
+                    <p>
+                      <a href="https://crud-with-moongodb.onrender.com/" class="btn btn-primary me-2" target="_blank">Live Demo</a>
+                      <a href="https://github.com/Gauravvgithub/crud_with-moongoDB" class="btn btn-info" target="_blank">GitHub Repo</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Show More
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="https://www.linkedin.com/in/gaurav-raj7011/">My Linkedin Page</a></li>
+            <li><a class="dropdown-item" href="https://my-portfolio-gaurav-seven.vercel.app/">My PortFolio</a></li>
+            <li><a class="dropdown-item" href="https://github.com/Gauravvgithub">My GitHub Page</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
